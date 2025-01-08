@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Career Hub</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="resources">
+            <h2>Career Resources</h2>
+            <p>Select a resource to explore:</p>
+            <div class="resources-section">
+                <div class="resource">
+                    <h3>Resume Writing</h3>
+                    <button class="btn" onclick="showResource('resume-writing')">Learn More</button>
+                </div>
+                <div class="resource">
+                    <h3>Interview Preparation</h3>
+                    <button class="btn" onclick="showResource('interview-preparation')">Learn More</button>
+                </div>
+                <div class="resource">
+                    <h3>Communication Skills</h3>
+                    <button class="btn" onclick="showResource('communication-skills')">Learn More</button>
+                </div>
+                <div class="resource">
+                    <h3>Library</h3>
+                    <button class="btn" onclick="showResource('library')">Learn More</button>
+                </div>
+                <div class="resource">
+                    <h3>Technical Skills</h3>
+                    <button class="btn" onclick="showResource('technical-skills')">Learn More</button>
+                </div>
+                <div class="resource">
+                    <h3>LinkedIn Profile Enhancement</h3>
+                    <button class="btn" onclick="showResource('linkedin-enhancement')">Learn More</button>
+                </div>
+                <div class="resource">
+                    <h3>Abroad Education</h3>
+                    <button class="btn" onclick="showResource('abroad-education')">Learn More</button>
+                </div>
+                <div class="resource">
+                    <h3>Passport Process</h3>
+                    <button class="btn" onclick="showResource('passport-process')">Learn More</button>
+                </div>
+                <div class="resource">
+                    <h3>Research Papers</h3>
+                    <button class="btn" onclick="showResource('research-papers')">Learn More</button>
+                </div>
+                <div class="resource">
+                    <h3>UPSC Preparation</h3>
+                    <button class="btn" onclick="showResource('upsc-preparation')">Learn More</button>
+                </div>
+                <div class="resource">
+                    <h3>GATE Preparation</h3>
+                    <button class="btn" onclick="showResource('gate-preparation')">Learn More</button>
+                </div>
+                <div class="resource">
+                    <h3>Soft Skills</h3>
+                    <button class="btn" onclick="showResource('soft-skills')">Learn More</button>
+                </div>
+                <div class="resource">
+                    <h3>Startup Mentoring</h3>
+                    <button class="btn" onclick="showResource('startup-mentoring')">Learn More</button>
+                </div>
+                <div class="resource">
+                    <h3>Freelancing</h3>
+                    <button class="btn" onclick="showResource('freelancing')">Learn More</button>
+                </div>
+                <div class="resource">
+                    <h3>Entrepreneurship</h3>
+                    <button class="btn" onclick="showResource('entrepreneurship')">Learn More</button>
+                </div>
+                <div class="resource">
+                    <h3>Job Search Strategies</h3>
+                    <button class="btn" onclick="showResource('job-search')">Learn More</button>
+                </div>
+                <div class="resource">
+                    <h3>Portfolio Building</h3>
+                    <button class="btn" onclick="showResource('portfolio-building')">Learn More</button>
+                </div>
+                <div class="resource">
+                    <h3>Skill Development</h3> <!-- New Resource -->
+                    <button class="btn" onclick="showResource('skill-development')">Learn More</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="resource-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div id="modal-body">
+                <p>Loading...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+    <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+        <h3 onclick="toggleAnswer(this)">What types of resources are available?</h3>
+        <div class="faq-answer">
+            <p>We offer resources such as resume writing, interview preparation, communication skills development, and more.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <h3 onclick="toggleAnswer(this)">How can I access these resources?</h3>
+        <div class="faq-answer">
+            <p>You can explore the resources directly from the "Career Hub" section or click on the "Learn More" button for each resource.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <h3 onclick="toggleAnswer(this)">Are these resources free?</h3>
+        <div class="faq-answer">
+            <p>Most of the resources are free to access. Some may require registration or membership for full access.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <h3 onclick="toggleAnswer(this)">Who can benefit from these resources?</h3>
+        <div class="faq-answer">
+            <p>These resources are designed for students, job seekers, and professionals looking to advance their careers.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <h3 onclick="toggleAnswer(this)">How frequently are the resources updated?</h3>
+        <div class="faq-answer">
+            <p>Resources are regularly updated to provide the latest information and techniques in career development.</p>
+        </div>
+    </div>
+</section>
+
+    
+
+</body>
+</html>
